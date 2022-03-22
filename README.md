@@ -4,10 +4,11 @@
 ## NIM      : 312010151
 ## KELAS    : TI.20.A1
 
+#
 # 1. MEMBUAT DOKUMEN HTML
 <img width="959" alt="pertama" src="https://user-images.githubusercontent.com/101621391/159464314-b755d0e4-3b00-47cb-b698-25d3497ee017.png">
 
-# Contoh coding
+## Contoh coding
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -38,12 +39,12 @@ dan CSS.</p>
 </body>
 </html>
 ```
-
+#
 # 2. Mendeklarasikan CSS Internal
 <img width="960" alt="kedua" src="https://user-images.githubusercontent.com/101621391/159464446-35023c75-6143-48ec-87ac-d4f243523fc7.png">
 Ini adalah hasil Mendeklarasikan CSS Internal
 
-# Contoh coding
+## Contoh coding
 ```
 <head>
     <!-- menyisipkan css eksternal -->
@@ -70,3 +71,85 @@ Ini adalah hasil Mendeklarasikan CSS Internal
 </head>
 ```
 #
+# 3. Menambahkan Inline CSS
+<img width="960" alt="inline" src="https://user-images.githubusercontent.com/101621391/159464650-2cd09c13-ea29-49cf-a321-38596a1dd3c9.png">
+Ini adalah hasi dari Menambahkan Inline CSS
+
+## Contoh coding
+```
+<p> style="text-align: center; color: #ccd8e4;"> </p>
+```
+#
+# 4. Membuat CSS Eksternal
+<img width="131" alt="buat file" src="https://user-images.githubusercontent.com/101621391/159469421-583c6562-458d-4f41-a01d-087b565665d7.png">
+
+Selanjutnya buatlah file baru dengan nama style_eksternal.css 
+Caranya masukan Contoh codingan berikut :
+
+## Contoh coding
+```
+nav {
+    background: #555555;
+    color:#fff;
+    padding: 10px;
+    }
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding:10px 20px;
+    }
+nav .active,
+nav a:hover {
+    background: #414141;
+    }
+```
+Kemudian tambahkan tag ```<link>``` untuk merujuk file css yang sudah dibuat pada bagian ```<head>```.
+
+Caranya yaitu, masukan contoh codingan berikut :
+```
+<link rel="stylesheet" href="style_eksternal.css" type="text/css">
+```
+Setelah memasukan contoh codingannya, simpan dan pergi lagi ke browser kemudian refresh kembali browser tersebut dan lihatlah perubahannya.
+
+
+<img width="960" alt="css" src="https://user-images.githubusercontent.com/101621391/159464745-2dacd66e-ad21-4623-a412-e4e80f5b2117.png">
+Inilah contoh perubahannya
+
+#
+# 5. Menambahkan CSS Selector
+Cara menambahkan CSS Selector adalah.
+
+Gunakan ID dan Class Selector. Pada file
+style_eksternal.css.
+
+Cara menambahkannya ialah masukan kode berikut di file style_eksternal.css.
+```
+/* ID Selector */
+#intro {
+    background: #444444;
+    border: 1px solid #000000;
+    min-height: 100px;
+    padding: 10px;
+    }
+    #intro h1 {
+    text-align: left;
+    border: 0;
+    color: #fff;
+    }
+    /* Class Selector */
+    .button {
+    padding: 15px 20px;
+    background: #bebcbd;
+    color: #fff;
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    }
+    .btn-primary {
+    background: #286936;
+    }
+```
+
+Setelah menambahkan kodenya simpan (Ctrl s) filenya, dan pergi lagi ke broeser kemudian refresh, lihatlah perubahannya.
+<img width="960" alt="cssselektor" src="https://user-images.githubusercontent.com/101621391/159464851-8e00e614-c232-450c-9a56-769e4fa62d6a.png">
+Inilah contoh perubahannya
